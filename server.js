@@ -8,6 +8,8 @@ app.get("/", (req, res) => {
     res.send("Hello World")
 })
 
-app.listen(1000, () => {
+
+
+app.listen(process.env.PORT || 1000, () => {
     console.log("server running")
 })
